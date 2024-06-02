@@ -1,0 +1,171 @@
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('SCR.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation Links */
+.navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 500;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+}
+
+/* Social Icons */
+.social-icons a {
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+}
+
+/* Section Titles */
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    color: #00447c;
+}
+
+/* Bootstrap Buttons */
+.btn-primary {
+    background-color: #00447c;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #00274e ;
+}
+
+.btn-secondary {
+    background-color: #ffc107;
+    border: none;
+    transition: all 0.3s ease;
+    color: #00274e;
+}
+
+.btn-secondary:hover {
+    background-color: #ffcd39;
+}
+
+/* Bootstrap Cards */
+.card {
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 80%; 
+    height: 100%;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Popup Text */
+.popup-text {
+    visibility: hidden;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: -100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    opacity: 0;
+    transition: opacity 0.3s, bottom 0.3s; 
+}
+
+.card:hover .popup-text {
+    visibility: visible;
+    opacity: 1;
+    bottom: 0;
+}
+
+.card:hover .overlay {
+    visibility: visible;
+}
+
+/* Form */
+form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; 
+    max-width: 400px; 
+}
+
+/* Carousel Item */
+.carousel-item img {
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Animation for carousel captions */
+.carousel-caption strong {
+    animation: boldAnimation 2s infinite alternate;
+}
+
+@keyframes boldAnimation {
+    from {
+        font-weight: normal;
+    }
+    to {
+        font-weight: bold;
+    }
+}
+
+/* Carousel Caption */
+.carousel-caption {
+    font-size: 0; 
+    font-weight: bold;
+    transition: font-size 0.3s ease; 
+}
+
+/* Show the text when hovering over the carousel item */
+.carousel-item:hover .carousel-caption {
+    font-size: 1.5em; 
+}
